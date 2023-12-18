@@ -4,7 +4,7 @@
 Single Choice
 1)
 Final Score: 93 %
- A solutions architect has been asked to help troubleshoot a Step Function's execution of a state machine. The users are noticing that occasionally, a task doesnt return a response and it creates a situation where the state
+ A solutions architect has been asked to help troubleshoot a Step Function's execution of a state machine. The users are noticing that occasionally, a task does ginot return a response and it creates a situation where the state
 machine has to be reset.
  What can be added to the process flow in the state machine to help recover automatically from a stuck condition created by an un-returned result from
 a task?
@@ -13,7 +13,7 @@ Create a Pass process flow to bypass the problem task. Use timeouts to avoid stu
 timeouts for state machine definitions. Without an explicit timeout, Step Functions often relies solely on a response from an activity worker to know that a task is complete. If something goes wrong and the TimeoutSeconds field isn't specified for an Activity or Task state,
 an execution is stuck waiting for a response that will never come.
 Remove the problem task from the state machine.
- Create a cron job that will automatically retrigger the state machine
+ Create a cron job that will automatically re trigger the state machine
 after a certain amount of time.
 Score: 0.79
 Single Choice
@@ -409,13 +409,13 @@ Amazon DynamoDB
 Amazon ElastiCache with Redis cluster mode enabled
 25)
 A customer has a Linux based application which currently requires access to a shared storage solution for the application to work properly in a cluster.
- Implement a multivalued answer routing policy to route queries to the
+ Implement a multi valued answer routing policy to route queries to the
 correct endpoint.
   Your company is looking to store session information from their backend Amazon EC2 instances and they want to identify the best database which can provide them durability, high availability (HA), scalability and persistence. Since they want to store session information, they want a
 database which can provide them microsecond latency.
    Amazon MemoryDB for Redis
 Comments: As discussed here (https://aws.amazon.com/blogs/aws/
-introducing-amazon-memorydb-for-redis-a-redis-compatible-durable-
+introducing-amazon-memmorydb-for-redis-a-redis-compatible-durable-
 in-memory-database-service/#:
    Amazon DocumentDB
  Score: 0.79
