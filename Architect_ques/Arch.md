@@ -4,16 +4,26 @@
 Single Choice
 1)
 Final Score: 93 %
+<<<<<<< HEAD
  A solutions architect has been asked to help troubleshoot a Step Function's execution of a state machine. The users are noticing that occasionally, a task does ginot return a response and it creates a situation where the state
 machine has to be reset.
+=======
+ A solutions architect has been asked to help troubleshoot a Step Function's execution of a state machine. The users are noticing that occasionally, a task doesn't return a response and it creates a situation where the state
+the machine has to be reset.
+>>>>>>> f83023b54a085708b79134e4478c3d1b3a9ad492
  What can be added to the process flow in the state machine to help recover automatically from a stuck condition created by an un-returned result from
 a task?
 Create a Pass process flow to bypass the problem task. Use timeouts to avoid stuck executions.
  Comments: By default, the Amazon States Language doesn't specify
-timeouts for state machine definitions. Without an explicit timeout, Step Functions often relies solely on a response from an activity worker to know that a task is complete. If something goes wrong and the TimeoutSeconds field isn't specified for an Activity or Task state,
+timeouts for state machine definitions. Without an explicit timeout, Step Functions often rely solely on a response from an activity worker to know that a task is complete. If something goes wrong and the TimeoutSeconds field isn't specified for an Activity or Task state,
 an execution is stuck waiting for a response that will never come.
+<<<<<<< HEAD
 Remove the problem task from the state machine.
  Create a cron job that will automatically re trigger the state machine
+=======
+Could you remove the problem task from the state machine?
+ Create a cron job that will automatically retrigger the state machine
+>>>>>>> f83023b54a085708b79134e4478c3d1b3a9ad492
 after a certain amount of time.
 Score: 0.79
 Single Choice
@@ -34,9 +44,9 @@ subnets.
   Direct Connect Gateway
  Score: 0.79
 Multiple Choice
- A company wants to allow their existing Active Directory users access to
+ A company wants to allow its existing Active Directory users access to
 AWS without having to recreate AWS IAM user accounts for every person.
- Which of the following methods is the most cost effective solution to meet
+ Which of the following methods is the most cost-effective solution to meet
 the requirements? (Select TWO)
 X.509 Certificate OpenID Connect Cognito Identity Pool
 Amazon Directory Services
@@ -54,40 +64,40 @@ Multiple Choice
 on-premise sites and Amazon VPCs? (Select TWO)
  Amazon VPC Reachability Analyzer VPC Peering
   AWS Direct Connect
- Comments: AWS Direct Connect can be used for an hybrid
+ Comments: AWS Direct Connect can be used for a hybrid
 networking connectivity.
   AWS Site-to-Site VPN
-Comments: AWS Site-to-Site VPN can be used for an hybrid
+Comments: AWS Site-to-Site VPN can be used for a hybrid
 networking connectivity.
 Score: 0.79
 Multiple Choice
  5)
  A developer with limited AWS knowledge recently joined a company. As part of their initial tasks, the developer was required to create a new bucket. However, while trying to create a new bucket, the developer kept on getting different errors. You are the senior developer of the company and you are tasked with sharing the bucket naming rules that AWS has for
 creating new buckets.
-What are the correct rules for creating new buckets? (Select THREE) Bucket name must be between 3-40 characters long.
+What are the correct rules for creating new buckets? (Select THREE) The bucket name must be between 3-40 characters long.
  Bucket Names can use a dot(.) in the name, only if its used for
 Amazon S3 static website.
  Comments: Use a dot (.) in the name only if the bucket's intended
-purpose is to host an Amazon S3 static website; otherwise do not use
+the purpose is to host an Amazon S3 static website; otherwise do not use
 a dot (.) in the bucket name.
 
  Bucket names must not begin with xn--
 Bucket names must start with a lowercase letter or number. Comments: Bucket names can be lowercase or a number.
-Bucket name must be unique only for the region.
-Bucket names can be formatted as an IP address (i.e. 198.68.10.2).
+The bucket name must be unique only for the region.
+Bucket names can be formatted as IP addresses (i.e. 198.68.10.2).
 Score: 0.79
 Single Choice
 6)
  Comments: Bucket names should not begin with xn-- beginning
 February 2020.
   After a budget review, you have noticed your Amazon EBS charges make up a significant portion of your bill. Currently, all EBS volumes are in use and required to stay active. All unattached volumes have been deleted after creating snapshots. Snapshots are managed with lifecycle policies and a
-review has found no issue with retention.
+the review has found no issue with retention.
  Which of the following options will best help you to reduce your EBS
 spending?
  Detach the Amazon EBS volume from the Amazon EC2 instance.
 This will make sure you are not being charged unless you are using
 the EBS volume by attaching it to an EC2 instance.
- Generate snapshots of all volumes and only create and Amazon EBS
+ Generate snapshots of all volumes and only create an Amazon EBS
 volume when the data is requested.
  Review the Amazon EBS volume size to make sure you did not over
 provision EBS volumes.
@@ -100,23 +110,23 @@ using within the next year.
   Score: 0.79
 Multiple Choice
 7)
- Your company uses an Identity Provider (IdP) for Single-sign on (SSO) and has tasked their solutions architect with connecting their AWS Account to the IdP so their users can leverage their corporate identity to access the
+ Your company uses an Identity Provider (IdP) for Single-sign on (SSO) and has tasked its solutions architect with connecting their AWS Account to the IDP so their users can leverage their corporate identity to access the
 environment.
  What actions should the solutions architect take to meet these
 requirements? (Select TWO)
  Create an AWS IAM User Group, associate the User Group with the
 IdP and add users to the User Group.
  Create an AWS IAM User with AWS Management Console Access,
-attach a policy with a trust relationship with the IdP.
+attach a policy with a trust relationship with the IDP.
  Create an AWS IAM Identity Provider by uploading the SAML
-metadata document from your IdP.
+metadata document from your IDP.
 Comments: This is correct, IdP metadata documents are provided in
-an SAML format
- Create an AWS IAM Role with a trust relationship with the IdP.
+a SAML format
+ Create an AWS IAM Role with a trust relationship with the IDP.
  Comments: This is correct, Any IAM roles that will be used with IAM
-federations require a trust policy to permit federation from the IdP
+federations require a trust policy to permit federation from the IDP
  Create an AWS IAM Identity Provider by uploading the JSON
-metadata document from your IdP.
+metadata document from your IDP.
 Score: 0.79
 Multiple Choice
 8)
